@@ -18,9 +18,9 @@ WDB is an Angular-5 based app. A Nodejs installation is required for this, so th
 The URL and port where the app is running is set to 127.0.0.1:8200 by default. This setting can be found in the ".angular-cli.json" file in the "defaults" section near the end of the file. You can adjust this setting according to your personal needs.
 
 ## Settings in Wakanda
-The WDB runs outside the Wakanda web server and requires a permission for cross domain requests (CORS) to communicate with the Wakanda database. In Wakanda Studio, open the settings file (settings. waSettings) and locate the Publishing Information section. Activate the option "Enable Cross Origin Resource Sharing". Add the URL and port of the WDB to the list of doamins allowed for CORS, in our case so:
+The WDB runs outside the Wakanda web server and requires a permission for cross domain requests (CORS) to communicate with the Wakanda database. In Wakanda Studio, open the settings file (settings. waSettings) and locate the Publishing Information section. Activate the option "Enable Cross Origin Resource Sharing". Add the URL and port of the WDB to the list of doamins allowed for CORS, in our case:
 
-Insert "127.0.0.0.1:8200" in the first input field and the methods "Post, Get, Put, Delete" in the second input field, then press the "Add"button.
+Insert "127.0.0.1:8200" in the first input field and the methods "Post, Get, Put, Delete" in the second input field, then press the "Add"button.
 
 ## Usage of WDB
 Open the WDB app in your browser under the URL http://127.0.0.1:8200 or as it is stored locally in the file ".angular-cli.json".
