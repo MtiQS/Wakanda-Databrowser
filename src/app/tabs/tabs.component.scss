@@ -1,0 +1,37 @@
+.nav-tabs {
+    background: whitesmoke;    
+}
+
+.nav-tabs > li > a {
+    color: #555 !important;
+    font-size: 1.1em;
+    font-weight: 500;
+    border: 1px solid #ddd !important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555 !important;
+    cursor: default !important;
+    background-color: #fff !important;
+    border: 1px solid #ddd !important;
+    border-bottom-color: transparent !important;
+}
+
+.tab-close {
+    color: gray;
+    text-align: right;
+    cursor: pointer;
+}
+
+.tab-new {
+    background-color: lightgray !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.md-icon-tab-new {
+    margin: 0 !important;
+}

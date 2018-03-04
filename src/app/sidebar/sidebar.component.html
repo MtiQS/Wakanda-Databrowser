@@ -1,0 +1,27 @@
+
+<div class="sidebar-wrapper">
+    <div class="logo">
+        <a href="https://wakanda.github.io/" class="simple-text">
+            <div class="logo-img">
+                <img src="/assets/img/wakanda-full-light-bg.png"/>
+            </div>            
+        </a>
+    </div>
+    <div class="dataStoreURL">
+        <input type="text" pInputText [(ngModel)]="dataStoreUrl"/>
+        <p-button (onClick)="loadCatalog()" label="Load"></p-button>
+    </div>
+    <!-- Datenklassen anzeigen -->
+
+        <p-dataList [value]="dataClasses" [paginator]="false" [totalRecords]="totalRecords" [immutable]="true">
+            <p-header>
+                Datastore Classes
+            </p-header>
+            <ng-template let-dataClass pTemplate="item">
+                    <span class="fileLineBody">
+                <div fxFlex="100" class="dataClass" (click)="loadDataClass(dataClass.name)">{{dataClass.name}}</div>
+            </span>
+            </ng-template>    
+        </p-dataList>
+    
+</div>

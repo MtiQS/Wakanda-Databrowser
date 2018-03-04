@@ -1,0 +1,36 @@
+.filter {
+    margin: 5px; 
+}
+
+.filter input {
+    width: 93%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.headerKind {
+    font-size: 0.8em;
+}
+
+.row span {
+    margin-right: 25px;
+}
+
+.headerIcon {
+    font-size: 1.0em;
+    font-weight: 400;
+    color: rgb(255, 204, 0); 
+}
+
+.add {
+    margin-left: 16px;
+    margin-top: 10px; 
+    font-size: 1.2em;
+    font-weight: 500; 
+}
+
+.noWrap {
+    white-space: nowrap;
+}

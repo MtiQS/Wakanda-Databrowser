@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="init row">
+        <span>Data class: <p-dropdown [options]="dataClasses" [(ngModel)]="selectedDataClass" [style]="{minWidth: '300px'}"></p-dropdown></span>
+        <span>ID: <input id="input" type="text" size="33" pInputText [(ngModel)]="selectedID"></span>
+        <span><p-button class="add" (click)="initialLoad()" icon="fa fa-refresh"></p-button></span>
+    </div>
+
+    <p-tree class="tree" [value]="data" layout="horizontal" (onNodeExpand)="loadNode($event)">
+        <ng-template let-node pTemplate="default">
+            <span [innerHTML]="node.label"></span>
+        </ng-template>
+    </p-tree>
+
+</div>
