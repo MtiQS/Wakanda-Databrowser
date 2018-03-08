@@ -27,6 +27,13 @@ Open the WDB app in your browser under the URL http://127.0.0.1:8200 or as it is
 
 At the top left-hand side is an input field, where you enter the URL of the Wakanda instance whose database you want to access, e. g. http:// localhost: 8083. Use the "Load" button to connect to the database and, if all settings are correct, you will see under the input field all data classes of the database that are in public view.
 
+![list of data classes](https://user-images.githubusercontent.com/36931339/37166186-addb22bc-22fe-11e8-94df-f1046a646331.png)
+
+
 The display and work area is located on the right side of the app. By default, the "Tree" tab is displayed here. If you click a data class in the list of data classes on the left-hand side, a new tab will be added and opened on the right-hand side. All entities in this data class are displayed here. Click on a row and the record is selected, it can now be edited. The functionality is similar to the old data browser (walib version).
 
+![data editor](https://user-images.githubusercontent.com/36931339/37166270-e8b93d06-22fe-11e8-9282-ad5ec3d00ee6.png)
+
 The "Tree" tab provides a different view of the data. First select a data class from the dropdown list and enter a valid primary key of a data record in the input field. With the button next to the input field you start the search for exactly this data record (therefore the primary key). If the record was found, it is displayed as the root node. From this root node, you can now navigate deeper into your data by opening the next node (if available) by clicking the plus (+) icon.
+
+![tree](https://user-images.githubusercontent.com/36931339/37165927-108ff208-22fe-11e8-9117-41845094e488.png)
