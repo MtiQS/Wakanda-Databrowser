@@ -271,7 +271,7 @@ export class SingleDataClassComponent {
 
     _saveEntity(params) {
         try {
-            if (this.selectedEntity && this.selectedEntity._key) {
+            if (this.selectedEntity) {
                 Observable.fromPromise(this.selectedEntity.save()).subscribe(
                     res => {
                         this.core._setGrwolMsg({
@@ -370,6 +370,7 @@ export class SingleDataClassComponent {
                     },
                     () => {
                         this.entities.push(entity);
+                        this.selectedEntity = entity;
                     }
                 );
             }
